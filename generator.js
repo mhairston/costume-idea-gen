@@ -46,7 +46,7 @@ function combo(){
         phrase += " " + getWord("state1");
     } else {
         phrase += " with " + getWord("state2")
-        if (rr(100) < 4) {
+        if (rr(100) < 10) {
           phrase += " " + getWord("subst");
         }
     }
@@ -56,10 +56,8 @@ function combo(){
 
 function generate() {
   var idea = document.getElementById('idea-text');
-
   idea.classList.add('faded');
   window.setTimeout(function(){
     idea.innerHTML = combo();
     idea.classList.remove('faded');
-  }, 700);
-}
+  }, 500);

@@ -26,14 +26,14 @@ p {
 }
 
 .disclaimer {
+  font-style: italic;
   line-height: 1.3;
-  font-size: 0.9rem;
-  color: #888;
-  margin-top: 6rem;
+  color: #ddd;
+  margin: 2rem 0;
 }
 
 super {
-  color: white;
+  color: #fff;
 }
 
 .desc {
@@ -53,7 +53,7 @@ super {
 }
 
 button {
-  color: #fff;
+  color: #5f5;
   font-size: 1.5rem;
   font-family: Palatino,Georgia,Times;
   font-style: italic;
@@ -68,7 +68,8 @@ button {
 }
 button:hover,
 button:focus {
-  color: #5f5;
+  color: #fff;
+  background-color: #a40;
   outline: 0;
 }
 button:active {
@@ -86,10 +87,11 @@ button:active {
   box-shadow: 0 0 30px #000;
   border-radius: 30px;
 }
+
 #idea-text {
   display: inline-block;
   opacity: 1.0;
-  text-shadow: 0 0 8px #0f0;
+  text-shadow: 0 0 20px #4f4;
   -webkit-transition: opacity 0.7s;
           transition: opacity 0.7s;
 }
