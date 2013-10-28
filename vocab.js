@@ -1,11 +1,10 @@
 // Vocabulary for Halloween Costume Idea Generator
 
 // define adjectives - Modifier for the character
-g1 = "Undead*Robot*Sexy*Disoriented*Cannibal*Stoned*Overweight*Frozen*8-foot tall*Creepy*Amnesiac"
-  + "*Midget*Blind*Drunk*<small>LEGO</small>*Gay*Bald*Stinky*Incontinent*Clumsy*Spastic*Blonde"
+g1 = "Undead*Robot*Sexy*Disoriented*Cannibal*Overweight*Frozen*8-foot tall*Amnesiac"
+  + "*Blind*Drunk*<small>LEGO</small>*Bald*Stinky*Incontinent*Clumsy*Spastic*Blonde"
   + "*Baby*Constipated*Hunchback*Handcuffed*Jaundiced*Masturbating*Yodelling*Gargling*Shrunken"
-  + "*Slime-covered*Stuttering*Cock-eyed*Cross-eyed*Nearsighted*Unemployed"
-  + ""
+  + "*Slime-covered*Stuttering*Cross-eyed*Nearsighted*Unemployed"
   + "*Hungover*Hobo*Mechanical*Bug-eyed*Metal*Marshmallow*Wooden*Brain-damaged*Sleep-deprived";
 
 // define objects - the basic character the costume is based on
@@ -17,7 +16,7 @@ g2 = "Ben Franklin*Khaddafi*Bill Clinton*Darth Vader*Inigo Montoya*Ghost*Pan*Zor
   + "*Cheerleader*Chuck Norris*Rabbi*Wonder Woman*Catwoman*Pirate*Elf*ALF*Clown*Bee"
   + "*Chewbacca*Doc Brown*Michael Jackson*George Washington*Sailor*Stormtrooper*Luigi*Superman*R2D2"
   + "*Monkey*Yoda*Skeleton*Hamster*Pikachu*Anime Princess*Dolphin*Goblin*Spiderman*Hulk*Dumbledore"
-  + "*Sir Lancelot*Squirrel*Exorcist*Garfield*Mannequin*Dementor*Priest*Cat*Monica Lewinsky*Big Bird"
+  + "*Sir Lancelot*Squirrel*Exorcist*Sumo Wrestler*Garfield*Mannequin*Dementor*Priest*Cat*Monica Lewinsky*Big Bird"
   + "*Joe Camel*Minion*Lois Lane*Zombie*Grinch*Mr Rogers*James Bond*Porcupine*Platypus*Popeye"
   + "*Easter Bunny*Santa*Tooth Fairy*Sandman*Hobbit*Sauron*Wicked Witch*Dr. Evil"
   + "*Amoeba*Vampire*Hyena*Werewolf*Yeti*Frenchman*Godzilla*King Kong*Mayor McCheese*Burger King"
