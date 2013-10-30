@@ -1,48 +1,281 @@
 // Vocabulary for Halloween Costume Idea Generator
 
 // define adjectives - Modifier for the character
-g1 = "Undead*Robot*Sexy*Disoriented*Cannibal*Overweight*Frozen*8-foot tall*Amnesiac"
-  + "*Blind*Drunk*<small>LEGO</small>*Bald*Stinky*Incontinent*Clumsy*Spastic*Blonde"
-  + "*Baby*Constipated*Hunchback*Handcuffed*Jaundiced*Masturbating*Yodelling*Gargling*Shrunken"
-  + "*Slime-covered*Stuttering*Cross-eyed*Nearsighted*Unemployed"
-  + "*Hungover*Hobo*Mechanical*Bug-eyed*Metal*Marshmallow*Wooden*Brain-damaged*Sleep-deprived";
+var adj = [
+  "8-foot tall",
+  "<small>LEGO</small>",
+  "Amnesiac",
+  "Baby",
+  "Bald",
+  "Blonde",
+  "Brain-damaged",
+  "Bug-eyed",
+  "Cannibal",
+  "Clumsy",
+  "Constipated",
+  "Cross-eyed",
+  "Disco",
+  "Disoriented",
+  "Drunk",
+  "Frozen",
+  "Handcuffed",
+  "Hobo",
+  "Hunchback",
+  "Hungover",
+  "Hyperventilating",
+  "Incontinent",
+  "Mechanical",
+  "Heavy Metal",
+  "Nearsighted",
+  "Overweight",
+  "Redhead",
+  "Robot",
+  "Sexy",
+  "Shrunken",
+  "Sleep-walking",
+  "Slime-covered",
+  "Spastic",
+  "Stinky",
+  "Stuttering",
+  "Undead",
+  "Unemployed",
+  "Wooden",
+  "Yodelling"
+];
 
 // define objects - the basic character the costume is based on
-g2 = "Ben Franklin*Khaddafi*Bill Clinton*Darth Vader*Inigo Montoya*Ghost*Pan*Zorro*Dracula"
-  + "*Frankenstein*Smurf*Terminator*Indiana Jones*Princess Leia*Mr. Spock*Captain Kirk*Satan"
-  + "*Napoleon*Menudo*Zebra*Dr. Who*Dalek*Dog Catcher*Centaur*Medieval Knight*Voldemort*Galdalf"
-  + "*Harry Potter*Alien*Bilbo*Frodo*Gimli*Legolas*E.T.*Batman & Robin*Three Stooges*Mario*Jason*Joker"
-  + "*Headless Horseman*Darth Maul*Disembodied Head*Cujo*Lex Luthor*Ogre*Chicken*Freddy Kruger"
-  + "*Cheerleader*Chuck Norris*Rabbi*Wonder Woman*Catwoman*Pirate*Elf*ALF*Clown*Bee"
-  + "*Chewbacca*Doc Brown*Michael Jackson*George Washington*Sailor*Stormtrooper*Luigi*Superman*R2D2"
-  + "*Monkey*Yoda*Skeleton*Hamster*Pikachu*Anime Princess*Dolphin*Goblin*Spiderman*Hulk*Dumbledore"
-  + "*Sir Lancelot*Squirrel*Exorcist*Sumo Wrestler*Garfield*Mannequin*Dementor*Priest*Cat*Monica Lewinsky*Big Bird"
-  + "*Joe Camel*Minion*Lois Lane*Zombie*Grinch*Mr Rogers*James Bond*Porcupine*Platypus*Popeye"
-  + "*Easter Bunny*Santa*Tooth Fairy*Sandman*Hobbit*Sauron*Wicked Witch*Dr. Evil"
-  + "*Amoeba*Vampire*Hyena*Werewolf*Yeti*Frenchman*Godzilla*King Kong*Mayor McCheese*Burger King"
-  + "*Fairy*Leprechaun*Grim Reaper*Elmo*Kermit*Count*Penguin*King Arthur*Optimus Prime"
-  + ""
-  + "*Policeman*Surgeon*Mormon Tabernacle Choir*Orangutan*Yogi Bear*Tony the Tiger*Captain Picard";
+var obj = [
+  "Abraham Lincoln",
+  "ALF",
+  "Alien",
+  "Amoeba",
+  "Anime Princess",
+  "Batman &amp; Robin",
+  "Bumblebee",
+  "Ben Franklin",
+  "Big Bird",
+  "Bilbo",
+  "Bill Clinton",
+  "Burger King",
+  "Captain Kirk",
+  "Captain Picard",
+  "Catwoman",
+  "Centaur",
+  "Cheerleader",
+  "Chewbacca",
+  "Chicken",
+  "Chuck Norris",
+  "Clown",
+  "Count",
+  "Cujo",
+  "Dalek",
+  "Darth Maul",
+  "Darth Vader",
+  "Dementor",
+  "Disembodied Head",
+  "Doc Brown",
+  "Dog Catcher",
+  "Dolphin",
+  "Dr. Evil",
+  "Dr. Who",
+  "Dracula",
+  "Dumbledore",
+  "E.T.",
+  "Easter Bunny",
+  "Elf",
+  "Elmo",
+  "Exorcist",
+  "Fairy",
+  "Frankenstein",
+  "Freddy Kruger",
+  "Frenchman",
+  "Frodo",
+  "Galdalf",
+  "Garfield",
+  "George Washington",
+  "Ghost",
+  "Gimli",
+  "Goblin",
+  "Godzilla",
+  "Grim Reaper",
+  "Grinch",
+  "Hamster",
+  "Harry Potter",
+  "Headless Horseman",
+  "Hobbit",
+  "Hulk",
+  "Hyena",
+  "Indiana Jones",
+  "Inigo Montoya",
+  "James Bond",
+  "Jason",
+  "Joe Camel",
+  "Joker",
+  "Kermit",
+  "Khaddafi",
+  "King Arthur",
+  "King Kong",
+  "Klingon",
+  "Legolas",
+  "Leprechaun",
+  "Lex Luthor",
+  "Lois Lane",
+  "Luigi",
+  "Mannequin",
+  "Mario",
+  "Mayor McCheese",
+  "Medieval Knight",
+  "Menudo",
+  "Michael Jackson",
+  "Minion",
+  "Monkey",
+  "Mormon Tabernacle Choir",
+  "Mr Rogers",
+  "Mr. Spock",
+  "Napoleon",
+  "Ogre",
+  "Optimus Prime",
+  "Orangutan",
+  "Peter Pan",
+  "Penguin",
+  "Pikachu",
+  "Pirate",
+  "Platypus",
+  "Policeman",
+  "Popeye",
+  "Porcupine",
+  "Priest",
+  "Princess Leia",
+  "R2D2",
+  "Sailor",
+  "Sandman",
+  "Santa",
+  "Satan",
+  "Sauron",
+  "Sir Lancelot",
+  "Skeleton",
+  "Smurf",
+  "Spiderman",
+  "Squirrel",
+  "Stormtrooper",
+  "Sumo Wrestler",
+  "Superman",
+  "Surgeon",
+  "Terminator",
+  "Three Stooges",
+  "Tony the Tiger",
+  "Tooth Fairy",
+  "Vampire",
+  "Voldemort",
+  "Werewolf",
+  "Wicked Witch",
+  "Wonder Woman",
+  "Yeti",
+  "Yoda",
+  "Yogi Bear",
+  "Zebra",
+  "Zombie",
+  "Zorro"
+];
 
-// define state1 - conditions, dispositions, or things they have with them
-g3a = "running in circles*with a pegleg*on a skateboard*on a scooter*with no short-term memory"
-  + "*with Tourette's*on fire*hitting on everyone*from Heck*with terrible acne*with no pants"
-  + "*with no face*with a monocle*with googley eyes*in a tuxedo*in a diving outfit"
-  + "*playing a banjo*in a bikini*with an afro*with a tiny head*in a pith helmet"
-  + "*in a viking helmet*in a zoot suit*with antlers*playing the triangle*playing the bouzouki"
-  + "*playing the accordion*with tentacles*with two heads*with four arms*with a lisp"
-  + "*in pumps*with a scarf*eating a burrito*chewing gum*in a body cast*with braces*on a unicycle"
-  + "*on a tricycle*in a phone booth*playing the harmonica*in a miniskirt*in a kilt"
-  + "*in lederhosen*with goggles*in a spacesuit*with a dickie*in a tuque*in a propellor beanie";
-  + "*in a cowboy hat*in a tornado*with bunny ears"
-  + "*with an arrow through the head*in a Tardis*on skis*with a black eye*eating a turkey leg";
+// define state1 - conditions, dispositions, or things they have with them:
+var state1 = [
+  "breakdancing",
+  "eating a burrito",
+  "eating a turkey leg",
+  "hitting on everyone",
+  "in a bikini",
+  "in a body cast",
+  "in a cowboy hat",
+  "in a diving outfit",
+  "in a kilt",
+  "in a skirt",
+  "in a phone booth",
+  "in a pith helmet",
+  "in a propellor beanie",
+  "in a spacesuit",
+  "in a Tardis",
+  "in a tornado",
+  "in a tutu",
+  "in a tuque",
+  "in a tuxedo",
+  "in a viking helmet",
+  "in a zoot suit",
+  "in lederhosen",
+  "in pumps",
+  "on a scooter",
+  "on a skateboard",
+  "on a tricycle",
+  "on a unicycle",
+  "on fire",
+  "on skis",
+  "playing a banjo",
+  "playing the accordion",
+  "playing the bouzouki",
+  "playing the harmonica",
+  "playing the triangle",
+  "with a black eye",
+  "with a dickie",
+  "with a lisp",
+  "with a monocle",
+  "with a pegleg",
+  "with a scarf",
+  "with a tiny head",
+  "with an afro",
+  "with an arrow through the head",
+  "with antlers",
+  "with braces",
+  "with bunny ears",
+  "with eight arms",
+  "with goggles",
+  "with googley eyes",
+  "with fangs",
+  "with no pants",
+  "with no short-term memory",
+  "with tentacles",
+  "with terrible acne",
+  "with Tourette's",
+  "with two heads"
+];
 
 // define state2 - things that can substitute for body parts
 // (first item blank)
-g3b = "a mohawk*a goatee*muttonchops*a tennis racket*a lawn mower*a basketball hoop*a boomerang"
-  + "*a hook*a chainsaw*a scythe*an eggbeater*hedge-clippers*a blowtorch*a rubber duck"
-  + "*a pizza box*a hoola hoop*a beer keg*a Rubik's Cube*a cigar*a megaphone"
-  + "*a pineapple*an axe*a trebuchet*a bottle of Jim Beam*a bong*a baseball bat";
+var state2 = [
+  "a baseball bat",
+  "a basketball hoop",
+  "a beer keg",
+  "a blowtorch",
+  "a bong",
+  "a boomerang",
+  "a bottle of whiskey",
+  "a chainsaw",
+  "a cigar",
+  "a goatee",
+  "a hook",
+  "a hoola hoop",
+  "a lawn mower",
+  "a megaphone",
+  "a mohawk",
+  "a pineapple",
+  "a pizza box",
+  "a rubber duck",
+  "a scythe",
+  "a tennis racket",
+  "a trebuchet",
+  "an axe",
+  "an eggbeater",
+  "hedge-clippers",
+  "muttonchops"
+];
 
 // define substitution - body part to be substituted
-g3b2 = "for a hand*for a foot*for a nose*for a head";
+var subst = [
+  "for a foot",
+  "for a hand",
+  "for a head",
+  "for a nose"
+];
+
+
+
+

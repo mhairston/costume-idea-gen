@@ -6,12 +6,6 @@ function rr(max) {
     return Math.floor(Math.random()*max);
 }
 
-var adj =     g1.split('*');
-var obj =     g2.split('*');
-var state1 =  g3a.split('*');
-var state2 =  g3b.split('*');
-var subst =   g3b2.split('*');
-
 var nadj =    adj.length;
 var nobj =    obj.length;
 var nstate1 = state1.length;
@@ -61,3 +55,6 @@ function generate() {
     idea.innerHTML = combo();
     idea.classList.remove('faded');
   }, 500);
+}
+
+
